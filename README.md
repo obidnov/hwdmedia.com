@@ -1,23 +1,31 @@
 # HWD Media — EN
 
-Static corporate website at https://hwdmedia.com/, published by GitHub Pages from
+Static website at https://hwdmedia.com/, published by GitHub Pages from
 `master` at the repository root. No installation or build command is required.
 
-The homepage and shared assets reflect the approved Sites version of 6 November
-2026: centered hero without background artwork, correctly proportioned team
-portraits, a two-column mobile team layout and company facts below the copy.
+- `index.html`: company homepage, team and contact details.
+- `boomstream.html`: localized product overview, capabilities, use cases and integration resources.
+- `assets/site.css`: shared responsive layout and light/dark themes.
+- `assets/product.css`: styling scoped to the product page.
+- `assets/theme-init.js` and `assets/site.js`: theme preferences, language links,
+  optional photo dialogs and the official Boomstream embed.
+- `assets/team/`: supplied original team portraits.
+- `CNAME`: custom domain; preserve it when editing the website.
 
-- `index.html`: localized content, metadata and links between the two domains.
-- `assets/site.css`: responsive layout and light/dark color themes.
-- `assets/theme-init.js` and `assets/site.js`: system/light/dark selection,
-  persistent preferences, accessible photo dialogs and the official video embed.
-- `assets/team/`: the five supplied original portraits at full resolution.
-- `CNAME`: custom domain. Preserve this when editing the website.
+The player uses Boomstream iframe SDK 1.5.0, automatic site theme matching and
+`config.jsonp?title=0`. The product page and homepage keep the same localized video.
+Language links on the product page point to its counterpart on the other domain.
 
-The official video code is `GLRvs6yW`.
-Only corporate contact details are included in the homepage. No private résumé,
-context archive or local MP4 is included in this update.
+Product descriptions are based on the official localized sources:
 
-Before merging, validate local links and assets, language/canonical URLs, the
-localized embed code and JavaScript syntax. Browser screenshot verification is
-still outstanding: the task environment has no supported browser QA tool.
+- https://boomstream.com/
+- https://boomstream.com/online-video-platform
+- https://boomstream.com/live-broadcasting
+- https://boomstream.com/video-protection
+- https://boomstream.com/pay-per-view
+- https://boomstream.com/meet
+- https://boomstream.com/documentation/api
+
+Before merging, check local links and assets, canonical/hreflang URLs, JavaScript
+syntax, light/dark themes and responsive layouts. Also verify homepage navigation,
+photo dialogs and the player when changing shared JavaScript.
